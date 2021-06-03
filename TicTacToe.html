@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+
+<html lang="hu">
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="TicTacToe.css" type="text/css">
+		<script src="TicTacToe.js"></script>
+	</head>
+	<body onload="torol()">
+		<h2>Tábla generálás:</h2><br>
+		Hány sor legyen? <input type="number" id="hanysor" name="hanysor"> Hány oszlop legyen? <input type="number" id="hanyoszlop" name="hanyoszlop">
+		<button onclick="game()">Játék!</button>
+		<h2>Játék:</h2>
+		Sorszám: <input type="number" id="sorszam" name="sorszam"> Oszlopszám: <input type="number" id="oszlopszam" name="oszlopszam">
+		<select id="karakter" name="karakter">
+			<option value="X" id="X" color="red">X</option>
+			<option value="O" id="O" color="blue">O</option>
+		</select>
+			<button id="letsturn">Küldés!</button><br><br>
+		<div id="tablahelye">
+		</div>
+	</body>
+</html>
